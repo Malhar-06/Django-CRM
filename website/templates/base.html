@@ -11,7 +11,15 @@
     <title>Django-CRM</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    {% include 'navbar.html' %}
+
+    <div class="container">
+        <br/>
+        {% block content %}
+        {% endblock %}
+    
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
